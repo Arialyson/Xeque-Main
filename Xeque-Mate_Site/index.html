@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <title>Xeque-Mate Controle de Pragas</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="imagens/chess_784725.png"
+        />
+        <!-- Navegação e início -->
+        <link rel="stylesheet" href="styles/navegacao-inicio.css" />
+        <!-- Sobre mim -->
+        <link rel="stylesheet" href="styles/sobre-mim.css" />
+        <!-- Projetos -->
+        <link rel="stylesheet" href="styles/projetos.css" />
+        <!-- Habilidades -->
+        <link rel="stylesheet" href="styles/habilidades.css" />
+        <!-- footer -->
+        <link rel="stylesheet" href="styles/footer.css" />
+    </head>
+    <body onload="typeWriter(fName);">
+        <div>
+            <!-- menu -->
+            <input
+                id="close-menu"
+                class="close-menu"
+                type="checkbox"
+                aria-label="close-menu"
+                role="button"
+            />
+            <label
+                class="close-menu-label"
+                for="close-menu"
+                title="close menu"
+            ></label>
+            <div class="barra">
+                <div class="menu-centro">
+                    <div class="barra-conteiner centralizador">
+                        <div class="logo esquerda">
+                            <a href="index.html"
+                                ><img src="imagens/Logo/logo_xeque_mate_transparente.png" width="80px" alt="logo"
+                            /></a>
+                        </div>
+                        <nav class="direita">
+                            <ul
+                                onclick="getElementById('close-menu').checked=false;"
+                            >
+                                <li><a href="#inicio">Home</a></li>
+                                <li><a href="#sobre-mim">Xeque-Mate</a></li>
+                                <li><a href="#projetos">Controle de pragas</a></li>
+                                <li><a href="#habilidades">Serviços</a></li>
+                            </ul>
+                        </nav>
+                        <div class="rdsocial">
+                                <a href="https://www.instagram.com/xeque_mate_cp/" target="_blank"><img src="imagens/instagramblack.png" alt=""></a>
+                                <a href="https://www.facebook.com/profile.php?id=61581430270298" target="_blank"><img src="imagens/facebookblack3.png" alt=""></a>
+                                <a href="https://wa.me/+5584987502743" target="_blank"><img src="imagens/whatsappblack.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- menu -->
+
+            <!-- primeira tela -->
+            <section id="inicio">
+                <div class="altura-ajuste">
+                    <div class="inicio centralizador">
+                        <div class="ajustador organizador">
+                            <div class="apresentacao">
+                                <p class="descricao">
+                                    Um lançe e <br />
+                                    <span
+                                        style="display: inline"
+                                        class="meu-nome"
+                                        >Xeque-Mate!</span
+                                    >
+                                    <br />
+                                    <!-- Desenvolvedor Full Stack -->
+                                    Aqui as pragas sempre perdem o jogo!
+                                </p>
+                                <br />
+                                <div class="linkedin">
+                                    <a
+                                        href="https://wa.me/+5584987502743"
+                                        target="_blank"
+                                        class="link"
+                                        >Faça seu Orçamento</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="desenho">
+                                <img
+                                    class="desenho2"
+                                    src="imagens/Logo/logo_xeque_mate_transparente.png"
+                                    alt="Logo-menu-principal"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- primeira tela -->
+
+            <!-- sobre mim -->
+            <section id="sobre-mim">
+                <div class="centralizador">
+                    <div class="ajustador-2">
+                        <div class="avatar">
+                            <img
+                                class="desenho-bg"
+                                src="imagens/Logo/Rei-branco-logo.jpeg"
+                                alt="avatar"
+                            />
+                            <div class="circulo-conteiner">
+                                <img
+                                    class="circulo css"
+                                    src="imagens/chess_784725.png"
+                                    width="28px"
+                                    alt="css"
+                                />
+                                <img
+                                    class="circulo html"
+                                    src="imagens/chess_784725.png"
+                                    width="40px"
+                                    alt="css"
+                                />
+                                <img
+                                    class="circulo js"
+                                    src="imagens/queen_14993912.png"
+                                    width="33px"
+                                    alt="js"
+                                />
+                            </div>
+                        </div>
+                        <div class="sobre-mim">
+                            <h2 class="h2-sobre"> Sobre a</br> <span class="span-sobre">Xeque-Mate</span> <img src="imagens/Logo/Rei-branco-logo-transparente.png" alt=""></h2>
+                            <br />
+                            <div class="texto">
+                                      <p>A Xeque-Mate Controle de Pragas nasceu com o propósito de oferecer soluções eficazes, seguras e acessíveis no combate a pragas urbanas.</p> <p>Nossa missão é proteger lares, comércios, empresas e condomínios, garantindo ambientes mais saudáveis e confortáveis para todos.</p>
+                                
+                                <p>
+                                    Com uma equipe comprometida e treinada, trabalhamos com métodos modernos de dedetização, sempre priorizando a segurança das pessoas, dos animais de estimação e do meio ambiente.
+                                    
+                                </p>
+                                <p>
+                                    Atuamos em diversas frentes, incluindo:
+                                    
+                                    Controle de baratas, formigas e escorpiões
+                                    
+                                    Descupinização
+                                    
+                                    Desratização
+                                    
+                                    Controle de moscas e caramujos
+                                </p>
+                                
+                                <p>
+                                    Na Xeque-Mate, acreditamos que cada cliente merece um atendimento personalizado e transparente. Por isso, buscamos sempre entender a necessidade de cada situação para aplicar a melhor estratégia de controle, garantindo eficiência e tranquilidade.
+                                    
+                                </p>
+                                <p>Quando o assunto é controle de pragas, não deixe sua segurança em risco. Dê um Xeque-Mate definitivo nas pragas e conte com quem entende do assunto!</p>
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- sobre mim -->
+
+            <!-- Projetos -->
+            <section id="projetos">
+                <div class="centralizador projetos">
+                    <h2 class="project">Controle de pragas</h2>
+                    <div class="projetos-itens">
+                        <a href="Pragas/pagina-escorpioes/index.html" target="_blank">
+                            <div class="pro portfolio">
+                                <div class="pop1"><p>Escorpiões</p></div>
+                            </div>
+                        </a>
+                        <a href="Pragas/pagina-roedores/index.html" target="_blank">
+                            <div class="pro pop2">
+                                <div class="pop2"><p>Roedores</p></div>
+                            </div>
+                        </a>
+                        <a href="Pragas/pagina-aranhas/index.html" target="_blank">
+                            <div class="pro pop3">
+                                <div class="pop3"><p>Aranhas</p></div>
+                            </div>
+                        </a>
+                        <a href="Pragas/pagina-baratas/index.html" target="_blank">
+                            <div class="pro escondido pop4">
+                                <div class="breve"><p>Baratas</p></div>
+                            </div>
+                        </a>
+                        <a href="Pragas/pagina-formigas/index.html" target="_blank">
+                            <div class="pro escondido pop5">
+                                <div class="breve"><p>Formigas</p></div>
+                            </div>
+                        </a>
+                        <a href="../Xeque-Mate_Site/Pragas/pagina-moscas/index.html" target="_blank">
+                            <div class="pro escondido pop6">
+                                <div class="breve"><p>Moscas</p></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="github-link">
+                        <button>Ver mais</button>
+                        <a
+                            href="https://www.guiadoconstrutor.com.br/blog/as-pragas-mais-comuns-em-residencias-desafios-e-solucoes"
+                            target="_blank"
+                            >Saiba a importância de uma casa livre de pragas!</a
+                        >
+                    </div>
+                </div>
+            </section>
+            <!-- Projetos -->
+
+            <!-- Habilidades -->
+            <section id="habilidades">
+                <div class="centralizador">
+                    <div class="habilidades-pd">
+                        <h2 class="project">Serviços</h2>
+                        <div class="skills-descricao">
+                            <div class="conteiner-skills">
+                                
+                                <a href="serviços/casa/index.html" target="_blank">
+                                    <div class="skill-box skill1 html-skill">
+                                        <img
+                                            class="icones-habilidades"
+                                            src=""
+                                            alt=""
+                                        />
+                                    </div>
+                                </a>
+
+
+                                <a href="serviços/condominio/index.html" target="_blank">
+                                    <div class="skill-box skill2 css-skill">
+                                        <img
+                                            class="icones-habilidades"
+                                            src=""
+                                            alt=""
+                                        />
+                                    </div>
+                                </a>
+
+
+                                <a href="serviços/comercio/index.html" target="_blank">
+                                    <div class="skill-box skill3 js-skill">
+                                        <img
+                                            class="icones-habilidades"
+                                            src=""
+                                            alt=""
+                                        />
+                                    </div>
+                                </a>
+
+
+                                <!--  -->
+                                <a href="serviços/industria/index.html" target="_blank">
+                                    <div class="skill-box skill7">
+                                        <img
+                                            class="icones-habilidades"
+                                            src=""
+                                            alt=""
+                                        />
+                                    </div>
+                                </a>
+
+
+                                <a href="serviços/limpeza/index.html" target="_blank">
+                                    <div class="skill-box skill8">
+                                        <img
+                                            class="icones-habilidades"
+                                            src=""
+                                            alt=""
+                                        />
+                                    </div>
+                                </a>
+
+
+                                <a href="serviços/monitoramento/index.html" target="_blank">
+                                    <div class="skill-box skill13 sass-skill">
+                                        <img
+                                            class="icones-habilidades"
+                                            src=""
+                                            alt=""
+                                        />
+                                    </div>
+                                </a>
+
+
+                                <a href="serviços/desinsetização/index.html" target="_blank">
+                                    <div class="skill-box skill9 git-skill">
+                                        <img
+                                            class="icones-habilidades"
+                                            src=""
+                                            alt=""
+                                        />
+                                    </div>
+                                </a>
+
+
+                                <a href="serviços/especificos/index.html" target="_blank">
+                                    <div class="skill-box skill10 github-skill">
+                                        <img
+                                            class="icones-habilidades"
+                                            src=""
+                                            alt=""
+                                        />
+                                    </div>
+                                </a>
+                                <!--   -->
+                            </div>
+                            <div class="conteiner-descricao">
+                                <p class="texto-descricao">
+                                    Xeque-Mate
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Habilidades -->
+
+            <!-- footer -->
+            <footer class="footer">
+                <div class="footer-conteiner">
+                    <div class="contato-creditos">
+                        &copy;2023
+                        <br />
+                        Desenvolvido por Arialyson Lima <br />
+                         <br />
+                    </div>
+                    <div class="icons">
+                        <div class="links links1">
+                            <a
+                                href="https://github.com/Arialyson"
+                                target="_blank"
+                            >
+                                <img
+                                    class="transparente"
+                                    src="imagens/icons8-github-48.png"
+                                    alt="github-icon"
+                                />
+                            </a>
+                        </div>
+                        <div class="links links2">
+                            <a
+                                href="https://www.instagram.com/arialyson_lima/"
+                                target="_blank"
+                            >
+                                <img
+                                    class="transparente"
+                                    src="imagens/icons8-instagram-48.png"
+                                    alt="instagram-icon"
+                                />
+                            </a>
+                        </div>
+                        <div class="links links3">
+                            <a
+                                href="https://twitter.com/arialyson"
+                                target="_blank"
+                            >
+                                <img
+                                    class="transparente"
+                                    src="imagens/icons8-twitter-48.png"
+                                    alt="twitter-icon"
+                                />
+                            </a>
+                        </div>
+                        <div class="links links4">
+                            <a
+                                href="https://www.facebook.com/arialyson.lima"
+                                target="_blank"
+                            >
+                                <img
+                                    class="transparente"
+                                    src="imagens/icons8-facebook-48.png"
+                                    alt="facebook-icon"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer -->
+        </div>
+        <script src="js/scroll.js"></script>
+        <script src="js/maquina_escrever.js"></script>
+        <script src="js/habilidades.js"></script>
+    </body>
+</html>

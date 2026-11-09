@@ -1,0 +1,156 @@
+:root {
+    --cor1:#72348E;
+    --cor2:#B282F2;
+    --cor3:#3BD0F3;
+    --cor4:#05B7EB;
+    --cor5:#0AAADD;
+}
+#projetos {
+    width: 100%;
+    background-image: url(../imagens/pexels-cottonbro-9665186.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.portfolio {
+    background-image: url(../imagens/pragas/Escorpião.jpg);
+    background-size:cover;
+}
+.pop2 {
+    background-image: url(../imagens/pragas/Rato.jpg);
+    background-size: cover;
+}
+.pop3 {
+    background-image: url(../imagens/pragas/Aranha.jpg);
+    background-size: cover;
+}
+.pop4 {
+    background-image: url(../imagens/pragas/Barata.jpg);
+    background-size: cover;
+}
+.pop5 {
+    background-image: url(../imagens/pragas/Formiga.jpg);
+    background-size: cover;
+}
+.pop6 {
+    background-image: url(../imagens/pragas/Mosca.jpg);
+    background-size: cover;
+}
+.projetos {
+    padding-top: 93px;
+}
+
+.projetos h2, .projetos a {
+    text-align: center;
+}
+
+.projetos h2 {
+    padding-bottom: 70px;
+}
+
+button {
+    padding: 10px 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    background-color: #F62B22;
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+
+button:hover {
+    background-color: var(--cor2);
+}
+
+.github-link {
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 93px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.projetos a {
+    display: inline;
+}
+
+.pro {
+    background-color: #C4C4C4;
+    height: 195px;
+    width: 310px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+}
+
+.pro div p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #F62B22;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #F62B22;
+}
+
+.pro:hover {
+    letter-spacing: 5px;
+}
+
+/*.pro div {
+    background-color: var(--cor1);
+    width: 1000px;
+    text-align: center;
+    padding: 5% 0;
+    transform: rotate(-50deg);
+}
+*/
+.escondido {
+    opacity: 0;
+    display: none;
+    transition: 1000ms;
+}
+
+.projetos-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29.5px;
+    width: 100%;
+    justify-content: center;
+}
+
+@media (max-width:1200px) {
+  .projetos{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+  }
+
+  #projetos {
+      display: flex;
+      justify-content: center;
+  }
+
+  .projetos-itens {
+      flex-direction: column;
+  }
+
+}
+@media (max-width:950px) {
+    .pro {
+        max-width: 300px;
+    }
+    .centralizador {
+        padding: 20px 0 0;
+    }
+    .projetos h2 {
+        padding-bottom: 40px;
+    }
+
+
+}

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Página de Orçamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="file:///C:/Users/arial/OneDrive/Documentos/VsCodeProjects/Xeque-Main/Xeque-Mate_Site/index.html#inicio"><img src="Logo/logo_xeque_mate_transparente.png" alt="Logo da empresa" class="logo"></a>
+      <h1>Solicite seu orçamento</h1>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section class="form-card" aria-labelledby="orcamento-title">
+      <h2 id="orcamento-title">Formulário de Orçamento</h2>
+
+      <form id="quoteForm" novalidate>
+        <div class="row">
+          <label for="name">Nome completo</label>
+          <input type="text" id="name" name="name" required placeholder="Seu nome">
+        </div>
+
+        <div class="row two-cols">
+          <div>
+            <label for="email">E‑mail</label>
+            <input type="email" id="email" name="email" required placeholder="seu@exemplo.com">
+          </div>
+          <div>
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(00) 00000‑0000">
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="service">Serviço</label>
+          <select id="service" name="service">
+            <option value="desratizacao">Desratização</option>
+            <option value="dedetizacao">Dedetização</option>
+            <option value="controle">Controle de pragas</option>
+            <option value="outro">Outro (especificar abaixo)</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label for="description">Descrição / Observações</label>
+          <textarea id="description" name="description" rows="4" placeholder="Descreva o local, problemas e observações..."></textarea>
+        </div>
+
+        <fieldset class="row items-fieldset">
+          <legend>Itens do serviço (quantidade e preço unitário)</legend>
+          <div id="items"></div>
+          <button type="button" id="addItem" class="btn ghost">+ Adicionar item</button>
+        </fieldset>
+
+        <div class="row total-row" aria-live="polite">
+          <strong>Total estimado: R$ <span id="total">0,00</span></strong>
+        </div>
+
+        <div class="row actions">
+          <button type="button" id="calculate" class="btn primary">Calcular</button>
+          <button type="submit" class="btn success">Enviar pedido</button>
+          <button type="button" id="printBtn" class="btn">Imprimir / Salvar PDF</button>
+        </div>
+
+      </form>
+    </section>
+
+    <aside class="preview-card" aria-labelledby="preview-title">
+      <h2 id="preview-title">Resumo do Orçamento</h2>
+      <div id="summary" class="summary">
+        <p class="muted">Preencha o formulário e clique em <strong>Calcular</strong> para ver o resumo.</p>
+      </div>
+
+      <div class="copy-actions">
+        <button id="copySummary" class="btn">Copiar resumo</button>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Sua Empresa — Todos os direitos reservados</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

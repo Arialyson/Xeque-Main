@@ -1,0 +1,194 @@
+:root {
+    --cor1:#72348E;
+    --cor2:#B282F2;
+    --cor3:#3BD0F3;
+    --cor4:#05B7EB;
+    --cor5:#0AAADD;
+}
+#habilidades {
+    width: 100%;
+    background-image: url(../imagens/homem-tiro-completo-desinfetando-parede.jpg);
+    background-size: cover;
+    height: 100vh;;
+}
+
+.habilidades-pd {
+    padding-top: 93px;
+}
+
+.habilidades-pd h2 { 
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.skills-descricao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap:50px;
+    padding-bottom: 70px;
+}
+
+.conteiner-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 37px;
+    max-width: 55%;
+}
+
+.skill-box {
+    height: 106px;
+    width: 106px;
+    background-color: #C4C4C4;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.3s;
+}
+
+.skill-box:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+.conteiner-descricao {
+    color: black;
+    background: rgba(255, 255, 255, 0.579);
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    max-width: 40%;
+}
+
+@media (max-width:1200px) {
+
+    .conteiner-descricao {
+        height: 260px;
+    }
+
+    #habilidades {
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills-descricao {
+        display: flex;
+        flex-direction: column-reverse;
+        /* width: 535px; */
+        margin: 0 auto;
+        gap:50px;
+        padding-bottom: 70px;
+        align-items: center;
+    }
+
+    .skills-descricao p {
+        text-align: center;
+    }
+
+}
+@media (max-width:950px) {
+    .conteiner-skills {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 37px;
+        max-width: 300px;
+    }
+
+    .conteiner-descricao {
+        max-width: 300px;
+        height: 120px;
+    }
+    .habilidades-pd {
+        padding-top: 0px;
+    }
+    .habilidades-pd h2 {
+        padding-bottom: 20px;
+    }
+
+}
+
+.skill-box .icones-habilidades {
+    transition: ease-in-out 0.3s;
+}
+
+.skill-box:hover .icones-habilidades {
+    opacity: 0;
+}
+
+.skill1{
+    background-image: url(../imagens/icons/casa.png);
+    background-size:45%;
+}
+
+.skill2 {
+    background-image: url(../imagens/icons/predio.png);
+    background-size: 50%;
+}
+
+.skill3 {
+    background-image: url(../imagens/icons/comércio.png);
+    background-size: 50%;
+}
+
+.skill4 {
+    background-image: url(../imagens/icons/fabrica.png);
+    background-size: 50%;
+}
+
+.skill5 {
+    background-image: url(../imagens/icons/limpeza.png);
+    background-size: cover;
+}
+
+.skill6 {
+    background-image: url();
+    background-size: cover;
+}
+
+.skill7 {
+    background-image: url(../imagens/icons/fabrica.png);
+    background-size: 50%;
+}
+
+.skill8 {
+    background-image: url(../imagens/icons/limpeza.png);
+    background-size: 50%;
+}
+
+.skill9 {
+    background-image: url(../imagens/icons/aranha.png);
+    background-size: 60%;
+}
+
+
+.skill10 {
+    background-image: url(../imagens/icons/spray.png);
+    background-size: 50%;
+}
+
+.skill11 {
+    background-image: url();
+    background-size: cover;
+}
+
+.skill12 {
+    background-image: url();
+    background-size: cover;
+}
+
+.skill13 {
+    background-image: url(../imagens/icons/lupa.png);
+    background-size: 50%;
+}
+
+#fundo {
+    fill: red;
+}
+
